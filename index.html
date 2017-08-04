@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Better Doctor Lookup</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>Better Doctor Lookup</h1>
+        <h2>Look Up Local Doctors By Health Condition</h2>
+      </div>  <!--ends jumbotron-->
+      <div class="container main">
+        <h2>Search For Local Doctors</h2>
+        <form id="doctor-lookup">
+          <div class="form-group">
+            <label for="health-condition">Enter a health condition: </label>
+            <input type="text" class="form-control" id="health-condition" placeholder="e.g. 'sore throat'">
+          </div>
+          <button type="submit" id="health-condition-submit">View Doctors</button>
+        </form>
+
+        <div id="display-doctors">
+          <h2>List of Matching Doctors</h2>
+          <p id="show-doctors"></p>
+        </div>  <!--ends display-doctors-->
+      </div>  <!--ends container main-->
+    </div>  <!--ends container-fluid-->
+  </body>
+</html>
