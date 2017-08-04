@@ -1,0 +1,17 @@
+{
+  "name": "doctor-lookup",
+  "description": "Simple Javascript app to look up doctors by health issue using the Better Doctor API.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Nicole Freed"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
