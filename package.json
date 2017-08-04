@@ -9,6 +9,7 @@
   "author": "Nicole Freed",
   "license": "ISC",
   "devDependencies": {
+    "browserify": "^14.4.0",
     "gulp": "^3.9.1"
   }
 }
