@@ -1,9 +1,10 @@
 // var apiKey = require('./../.env').apiKey;
 var DoctorLookup = require('./../js/doctor-lookup.js').doctorLookupModule;
 
-var displayRawData = function(result) {
-  // console.log(result);
-  $('#show-doctors').text(result);
+var displayDoctors = function(doctorsArray) {
+  doctorsArray.forEach(function(doctor) {
+    $('#show-doctors').append(doctor + "<br>");
+  });
 };
 
 $(document).ready(function() {
@@ -12,8 +13,6 @@ $(document).ready(function() {
     $("#medical-issue").val("");
     var newDoctorLookup = new DoctorLookup(medicalIssue);
     console.log(newDoctorLookup);
-    var doctors = newDoctorLookup.getDoctors(medicalIssue);  // need to format
-    console.log(doctors);
-    // $("#show-doctors").text(doctors);
+    var doctorList = newDoctorLookup.getDoctors(medicalIssue, displayDoctors);  // need to format
   });
 });
