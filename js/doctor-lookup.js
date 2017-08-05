@@ -10,7 +10,9 @@ DoctorLookup.prototype.getDoctors = function(medicalIssue, displayDoctors) {
       var doctorsArray = [];
       for (i = 0; i < result.data.length; i++) {
         for (j = 0; j < result.data[i].practices.length; j++) {
-          doctorsArray.push(result.data[i].practices[j].name);
+          if (doctorsArray.indexOf(result.data[i].practices[j].name) === -1) {
+            doctorsArray.push(result.data[i].practices[j].name);
+          }
         }
       }
       displayDoctors(doctorsArray);
