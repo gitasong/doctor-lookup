@@ -9,6 +9,7 @@ var displayDoctors = function(doctorsArray) {
 
 $(document).ready(function() {
   $("#medical-issue-submit").click(function() {
+    $('#show-doctors').empty();
     var medicalIssue = $("#medical-issue").val();
     $("#medical-issue").val("");
     var newDoctorLookup = new DoctorLookup(medicalIssue);
