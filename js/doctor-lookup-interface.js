@@ -7,13 +7,17 @@ var displayDoctors = function(doctorsArray) {
   });
 };
 
+// var displayMedicalIssue = function() {
+//   $('#medical-issue-display').text(this.medicalIssue);
+// };
+
 $(document).ready(function() {
   $("#medical-issue-submit").click(function() {
     $('#show-doctors').empty();
     var medicalIssue = $("#medical-issue").val();
     $("#medical-issue").val("");
     var newDoctorLookup = new DoctorLookup(medicalIssue);
-    console.log(newDoctorLookup);
-    var doctorList = newDoctorLookup.getDoctors(medicalIssue, displayDoctors);  // need to format
+    $('#medical-issue-display').text(" who treat " + medicalIssue);
+    var doctorList = newDoctorLookup.getDoctors(medicalIssue, displayDoctors);
   });
 });
