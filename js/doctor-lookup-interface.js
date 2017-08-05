@@ -7,10 +7,6 @@ var displayDoctors = function(doctorsArray) {
   });
 };
 
-// var displayMedicalIssue = function() {
-//   $('#medical-issue-display').text(this.medicalIssue);
-// };
-
 $(document).ready(function() {
   $("#medical-issue-submit").click(function() {
     $('#show-doctors').empty();
