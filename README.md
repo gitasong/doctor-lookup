@@ -6,7 +6,7 @@
 
 ## Description
 
-Simple JavaScript/Node.js app to look up local doctors in the Portland, OR area who treat a specific medical issue. The user can enter a specific medical issue (e.g. "cough," "migraines," "PMS") and retrieve a list of doctors who treat that condition.
+Simple JavaScript/Node.js app to look up local doctors in the Portland, OR area who treat a specific medical issue. The app returns a list of available specialties. The user can enter a specific medical issue (e.g. "cough," "migraines," "PMS") and retrieve a list of doctors who treat that condition.
 
 ## Prerequisite Installations
 
@@ -36,7 +36,7 @@ Simple JavaScript/Node.js app to look up local doctors in the Portland, OR area 
 
 ## Known Bugs
 
-Currently, the app returns duplicate entries. Also, no message displays yet when there are no results. These will be fixed in a later version.
+No message displays yet when there are no results. This will be fixed in a later version.
 
 ## Support and contact details
 
