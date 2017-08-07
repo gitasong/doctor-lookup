@@ -1,5 +1,6 @@
 // var apiKey = require('./../.env').apiKey;
 var DoctorLookup = require('./../js/doctor-lookup.js').doctorLookupModule;
+var SpecialtyLookup = require('./../js/doctor-lookup.js').specialtyLookupModule;;
 
 var displaySpecialties = function(specialtiesArray) {
   specialtiesArray.forEach(function(specialty) {
@@ -14,6 +15,9 @@ var displayDoctors = function(doctorsArray) {
 };
 
 $(document).ready(function() {
+  newSpecialtyLookup = new SpecialtyLookup();;
+  $('#specialties-dropdown').empty();;
+  var specialties = newSpecialtyLookup.getSpecialties(displaySpecialties);
   $("#medical-issue-submit").click(function() {
     $('#show-doctors').empty();
     var medicalIssue = $("#medical-issue").val();
