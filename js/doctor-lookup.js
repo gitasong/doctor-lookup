@@ -1,5 +1,9 @@
 var apiKey = require('./../.env').apiKey;
 
+function SpecialtyLookup() {
+
+}
+
 SpecialtyLookup.prototype.getSpecialties = function(displaySpecialties) {
   $.get('https://api.betterdoctor.com/2016-03-01/specialties?skip=0&limit=20&user_key=' + apiKey)
     .then(function(result) {
@@ -38,3 +42,4 @@ DoctorLookup.prototype.getDoctors = function(medicalIssue, displayDoctors) {
 };
 
 exports.doctorLookupModule = DoctorLookup;
+exports.specialtyLookupModule = SpecialtyLookup;
