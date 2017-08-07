@@ -4,7 +4,7 @@ function DoctorLookup(medicalIssue) {
   this.medicalIssue = medicalIssue;
 }
 
-DoctorLookup.prototype.getSpecialties = function(displaySpecialties) {
+function getSpecialties(displaySpecialties) {
   $.get('https://api.betterdoctor.com/2016-03-01/specialties?skip=0&limit=20&user_key=' + apiKey)
     .then(function(result) {
       var specialtiesArray = [];
