@@ -1,6 +1,12 @@
 // var apiKey = require('./../.env').apiKey;
 var DoctorLookup = require('./../js/doctor-lookup.js').doctorLookupModule;
 
+var displaySpecialties = function(specialtiesArray) {
+  specialtiesArray.forEach(function(specialty) {
+    $('#specialties-dropdown').append("<option>" + specialty + "</option>");
+  });
+};
+
 var displayDoctors = function(doctorsArray) {
   doctorsArray.forEach(function(doctor) {
     $('#show-doctors').append(doctor + "<br>");
